@@ -30,13 +30,13 @@ def main():
     user_id = os.environ["USER_ID"]
     api_key = os.environ["API_KEY"]
     username = os.environ["USERNAME"]
-    studio_name = os.environ["STUDIO_NAME"]
+    
 
     if not user_id or not api_key or not username:
         print("Environment variables for user ID, API key, or username are not set.")
         exit(1)
 
-    
+    studio_name = os.environ["STUDIO_NAME"]
     teamspace = "Vision-model"
     print(f"Preparing to create Studio '{studio_name}' in teamspace '{teamspace}' for user '{username}'...")
 
