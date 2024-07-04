@@ -76,7 +76,9 @@ def main():
         print("Commands executed. Sleeping for 6 minutes...")
         time.sleep(6 * 60)  # Sleep for 6 minutes
 
-keep_alive()
+
 
 if __name__ == "__main__":
     main()
+
+keep_alive()
