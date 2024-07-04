@@ -2,6 +2,7 @@ import os
 import threading
 import time
 from lightning_sdk import Studio
+from app import keep_alive
 
 
 def run_command_in_studio(studio, command):
@@ -75,6 +76,7 @@ def main():
         print("Commands executed. Sleeping for 6 minutes...")
         time.sleep(6 * 60)  # Sleep for 6 minutes
 
+keep_alive()
 
 if __name__ == "__main__":
     main()
