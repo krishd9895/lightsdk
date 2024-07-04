@@ -9,7 +9,7 @@ def hello():
     return "Hello!"
 
 def run_flask_app():
-    app.run(host='0.0.0.0', port=8070)
+    app.run(host='0.0.0.0', port=8080)
 
 if __name__ == '__main__':
     # Start the main logic in a separate thread
