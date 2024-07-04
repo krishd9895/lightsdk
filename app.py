@@ -1,6 +1,6 @@
 from flask import Flask
 import threading
-from main import main as run_main_logic
+from lsdk import lsdk as run_main_logic
 
 app = Flask(__name__)
 
