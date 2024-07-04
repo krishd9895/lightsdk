@@ -8,7 +8,7 @@ WORKDIR /app
 RUN pip install --upgrade pip
 
 # Copy the main Python script and Flask app into the container
-COPY lsdk.py ./
+COPY lsdk.py app.py ./
 
 # Install the Lightning AI SDK 
 RUN pip install --no-cache-dir lightning-sdk bottle
