@@ -11,7 +11,7 @@ RUN pip install --upgrade pip
 COPY lsdk.py ./
 
 # Install the Lightning AI SDK 
-RUN pip install --no-cache-dir lightning-sdk
+RUN pip install --no-cache-dir lightning-sdk bottle
 
 # Define the port as an environment variable
 ENV PORT=8080
