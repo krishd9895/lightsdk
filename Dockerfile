@@ -7,11 +7,11 @@ WORKDIR /app
 # Copy the main Python script into the container
 COPY lsdk.py .
 
-# Install the Lightning AI SDK
+# Install the Light..SDK
 RUN pip install --no-cache-dir lightning-sdk
 
 # Define the port as an environment variable
-ENV PORT=8080
+ENV PORT=8070
 
 # Expose the port defined in the environment variable
 EXPOSE $PORT
