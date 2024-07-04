@@ -11,7 +11,7 @@ COPY lsdk.py app.py ./
 RUN pip install --no-cache-dir lightning-sdk flask
 
 # Define the port as an environment variable
-ENV PORT=8070
+ENV PORT=8080
 
 # Expose the port defined in the environment variable
 EXPOSE $PORT
