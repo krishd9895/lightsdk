@@ -26,10 +26,10 @@ def main():
     print("Starting Lightning AI authentication and studio creation process...")
 
     # Retrieve the authentication credentials from environment variables
-    user_id = os.environ["user_id"]
-    api_key = os.environ["api_key"]
-    username = os.environ["username"]
-    studio_name = os.environ["studio_name"]
+    user_id = os.environ["USER_ID"]
+    api_key = os.environ["API_KEY"]
+    username = os.environ["USERNAME"]
+    studio_name = os.environ["STUDIO_NAME"]
 
     if not user_id or not api_key or not username:
         print("Environment variables for user ID, API key, or username are not set.")
